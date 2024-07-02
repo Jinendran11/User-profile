@@ -15,11 +15,12 @@ body {
 
 .profile-card {
     background-color: #5e5e5e;
-    border-radius: 10px;
     margin: 10px;
     padding: 20px;
-    width: 200px;
+    width: 20vw;
     text-align: center;
+    border: 1px solid rgb(10, 3, 3);
+    border-radius: 15px;
 }
 
 .profile-card img {
@@ -59,3 +60,16 @@ body {
 .fetch-users:hover {
     background-color: #a09d9d;
 }
+
+@media (width < 576px) {
+    #profile-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .profile-card {
+      width: 70vw;
+    }
+    .user-table{
+      width: 50vw;
+    }
+  }
